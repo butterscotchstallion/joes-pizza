@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+  font-family: Open Sans;
+  font-size: 1.125rem;
+  color: #222;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 1rem;
+}
+
+.App-header h1, h2, h3, h4 {
+  margin: 0 0 1rem 0;
+}
+
+.App-header a {
+  color: #fff;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  gap: 1rem;
+}
+
+.App-grid-item {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.App-grid-item img {
+  max-width: 100%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+  position: relative;
+}
+
+.header {
+  grid-area: header;
+}
+
+.pizza-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.pizza-grid-item {
+  text-align: left;
+  box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+}
+
+.pizza-grid-item img {
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}

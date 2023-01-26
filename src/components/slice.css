@@ -1,0 +1,149 @@
+
+.starburst {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    background-color: #fff;
+    color: #222;
+    padding: .5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.slice-wrapper {
+    position: relative;
+    padding: 0;
+    min-height: 300px;
+    z-index: 1;
+}
+
+.slice-wrapper figure {
+    margin: 0;
+}
+
+.slice-wrapper figcaption {
+    line-height: 1.3rem;
+    margin: .5rem 0 0 0;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.slice-wrapper h4 {
+    margin: 1rem 0 1rem .5rem;
+}
+
+.add-to-cart-button {
+    padding: .5rem;
+    font-weight: 600;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    width: 100px;
+    background-color: green;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.starburst-container,
+.starburst-container:before,
+.starburst-container:after,
+.starburst-container .price,
+.starburst-container .price:before,
+.starburst-container .price:after {
+	height: 8.5em;
+	width: 8.5em;
+	/*background: #760B1F url(price-bg.png) top left no-repeat;*/
+	background-size: 8.5em;
+}
+
+.starburst-container:before,
+.starburst-container:after,
+.starburst-container .price:before,
+.starburst-container .price:after {
+	content: "";
+	position: absolute;
+}
+
+.starburst-container {
+	margin: 100px auto; /* Centering for demo */
+	position: relative; /* Context */
+	top: 2.5em;
+	left: 2.5em;
+	-webkit-transform: rotate(-45deg);
+	  -moz-transform: rotate(-45deg);
+	   -ms-transform: rotate(-45deg);
+	    -o-transform: rotate(-45deg);
+	       transform: rotate(-45deg);
+}
+
+.starburst-container:before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(-30deg);
+	  -moz-transform: rotate(-30deg);
+	   -ms-transform: rotate(-30deg);
+	    -o-transform: rotate(-30deg);
+	       transform: rotate(-30deg);
+}
+
+.starburst-container:after {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(-15deg);
+	  -moz-transform: rotate(-15deg);
+	   -ms-transform: rotate(-15deg);
+	    -o-transform: rotate(-15deg);
+	       transform: rotate(-15deg);
+}
+
+.starburst-container .price {
+	padding: .5em 0em;
+	height: 7.5em; /* height minus padding */
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	-webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+	   -ms-transform: rotate(45deg);
+	    -o-transform: rotate(45deg);
+	       transform: rotate(45deg);
+	z-index: 1; /* important so the text shows up */
+}
+
+.starburst-container .price:before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(60deg);
+	  -moz-transform: rotate(60deg);
+	   -ms-transform: rotate(60deg);
+	    -o-transform: rotate(60deg);
+	       transform: rotate(60deg);
+}
+
+.starburst-container .price:after {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(75deg);
+	  -moz-transform: rotate(75deg);
+	   -ms-transform: rotate(75deg);
+	    -o-transform: rotate(75deg);
+	       transform: rotate(75deg);
+}
+	
+.starburst-container .price span {
+	position: relative;
+	z-index: 100;
+	display: block;
+	text-align: center;
+	color: #FE3D5C;
+	font: 1.8em/1.4em Sans-Serif;
+	text-transform: uppercase;
+}
+
+.starburst-container .price span.number {
+  font-weight: bold;
+  font-size: 2.5em;
+  line-height: .9em;
+  color: #fff;
+}	
